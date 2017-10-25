@@ -2,8 +2,8 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/OSGi%Minimum-1.2"/>
-	<classpathentry kind="lib" path="D:/Cesar/MEDIOS DE PAGO/2017/Proyecto Wallet/PI5/Generación PIN Tarjetas/Movil/LibMCrypt-Android-1.4.jar"/>
-	<classpathentry kind="lib" path="D:/Cesar/MEDIOS DE PAGO/2017/Proyecto Wallet/PI5/7072016370-Consulta CVV2/javax-crypto.jar"/>
-	<classpathentry kind="lib" path="D:/Cesar/MEDIOS DE PAGO/2017/Proyecto Wallet/PI5/7072016370-Consulta CVV2/javax.xml.bind.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CESAR/Documents/BBVA/2017/Encriptacion PIN y CVV2/javax-crypto.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CESAR/Documents/BBVA/2017/Encriptacion PIN y CVV2/LibMCrypt-Android-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CESAR/Documents/BBVA/2017/Encriptacion PIN y CVV2/javax.xml.bind.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -20,12 +20,12 @@ public class TestPruebaCripto {
 			KpubData kpd = lib.generateKpub(null);
 			System.out.println("Llave Publica: " + kpd.getKPubValue());
 			System.out.println("Llave Privada: " + lib.getKeyPrivate());
-			
+/*			
 		    byte[] myBytes = kpd.getKPubValue().getBytes("UTF-8");
-			System.out.println("Llave Publica HEX: " + DatatypeConverter.printHexBinary(myBytes));
+			System.out.println("Llave Publica HEX: " + DatatypeConverter.printHexBinary(myBytes))
 			
 			byte[] myBytes1 =lib.getKeyPrivate().getBytes("UTF-8");
-			System.out.println("Llave Privada HEX: " + DatatypeConverter.printHexBinary(myBytes1));
+			System.out.println("Llave Privada HEX: " + DatatypeConverter.printHexBinary(myBytes1));*/
 			
 			
 		} catch (LibMCryptException e) {
