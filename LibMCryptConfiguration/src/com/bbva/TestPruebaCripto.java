@@ -18,8 +18,8 @@ public class TestPruebaCripto {
 
 		try {
 			KpubData kpd = lib.generateKpub(null);
-			System.out.println("Llave Publica: " + kpd.getKPubValue());
-			System.out.println("Llave Privada: " + lib.getKeyPrivate());
+			System.out.println("Llave Publica Generada: " + kpd.getKPubValue());
+			System.out.println("Llave Privada Generada: " + lib.getKeyPrivate());
 /*			
 		    byte[] myBytes = kpd.getKPubValue().getBytes("UTF-8");
 			System.out.println("Llave Publica HEX: " + DatatypeConverter.printHexBinary(myBytes))
