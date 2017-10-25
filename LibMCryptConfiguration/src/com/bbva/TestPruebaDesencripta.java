@@ -23,7 +23,7 @@ public class TestPruebaDesencripta {
 
 		// TODO Auto-generated method stub
 		
-		
+		//Comenetarios adicionales
 		KpubData kpd = lib.generateKpub(null);
 		
 		
