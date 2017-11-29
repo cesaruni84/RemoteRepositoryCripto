@@ -27,11 +27,7 @@ public class TestPruebaDesencripta {
 		//Comentario adicionales 2
 		//Comentario adicionales 3
 		KpubData kpd = lib.generateKpub(null);
-		
-		
-		
 
-		
 		String datosHOST = "";
 
 		try {

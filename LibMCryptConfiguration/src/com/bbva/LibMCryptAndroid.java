@@ -12,7 +12,6 @@ import javax.crypto.SecretKey;
 
 import com.bbva.sl.ar.android.libmcrypt.exception.LibMCryptException;
 import com.bbva.sl.ar.android.libmcrypt.impl.HostDataByte;
-import com.bbva.sl.ar.android.libmcrypt.tools.PropertiesManager;
 import com.bbva.sl.ar.android.libmcrypt.tools.VarTools;
 
 /**
@@ -24,8 +23,8 @@ public class LibMCryptAndroid implements LibMCrypt {
 	//private Context context;
 	private PropertiesManager pm;
 
-	public LibMCryptAndroid() {
-		//this.pm = new PropertiesManager();
+	public LibMCryptAndroid() throws LibMCryptException {
+		this.pm = new PropertiesManager();
 		//this.context = ctx;
 	}
 
@@ -114,7 +113,7 @@ public class LibMCryptAndroid implements LibMCrypt {
 
 			byte[] datosByte = VarTools.hexStr2Bytes(datos);
 
-			RSAPublicKey pk = CryptoTools.generatePublicKey(this.pm, keyTag);
+			RSAPublicKey pk = CryptoTools.generatePublicKey(pm, keyTag);
 
 			SecretKey secretKey = CryptoTools.generateRandomKeyDESEDE();
 
@@ -138,6 +137,7 @@ public class LibMCryptAndroid implements LibMCrypt {
 		} catch (Exception e) {
 	//		Log.w("encryptHostData",
 		//			"Error code " + e.getErrCode() + ": " + e.getErrMsg());
+			System.out.println("Error code " + e.getMessage());
 			throw new LibMCryptException(9999, e.getMessage());
 		}
 	}

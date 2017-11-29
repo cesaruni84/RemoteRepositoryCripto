@@ -10,16 +10,17 @@ public class TestPruebaCripto {
 	/**
 	 * @param args
 	 * @throws UnsupportedEncodingException 
+	 * @throws LibMCryptException 
 	 */
-	public static void main(String[] args) throws UnsupportedEncodingException {
+	public static void main(String[] args) throws UnsupportedEncodingException, LibMCryptException {
 		// TODO Auto-generated method stub
 
 		LibMCrypt lib = new LibMCryptAndroid();
 
 		try {
 			KpubData kpd = lib.generateKpub(null);
-			System.out.println("Llave Publica Generada: " + kpd.getKPubValue());
-			System.out.println("Llave Privada Generada: " + lib.getKeyPrivate());
+			System.out.println("Llave Publica Generada -: " + kpd.getKPubValue());
+			System.out.println("Llave Privada Generada -: " + lib.getKeyPrivate());
 /*			
 		    byte[] myBytes = kpd.getKPubValue().getBytes("UTF-8");
 			System.out.println("Llave Publica HEX: " + DatatypeConverter.printHexBinary(myBytes))

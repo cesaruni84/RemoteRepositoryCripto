@@ -30,7 +30,6 @@ import javax.crypto.spec.IvParameterSpec;
 
 import com.bbva.sl.ar.android.libmcrypt.exception.LibMCryptException;
 import com.bbva.sl.ar.android.libmcrypt.impl.LibMCryptConstants;
-import com.bbva.sl.ar.android.libmcrypt.tools.PropertiesManager;
 import com.bbva.sl.ar.android.libmcrypt.tools.VarTools;
 
 /**
